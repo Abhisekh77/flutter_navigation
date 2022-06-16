@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:travelapp/pages/firstpage.dart';
 import 'package:travelapp/pages/thirdpage.dart';
 import 'package:travelapp/pages/apmntfirst.dart';
+import 'package:travelapp/pages/login_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -22,10 +23,11 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              child: Text('Continue', style: TextStyle(fontSize: 40)),
+              child: Text('LOGIN PAGE', style: TextStyle(fontSize: 40)),
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return FirstPage();
+                  return LoginPage();
+                  // return ChewieDemo();
                 }));
               },
             ),
